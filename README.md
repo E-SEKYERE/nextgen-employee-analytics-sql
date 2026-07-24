@@ -18,10 +18,6 @@ The database contains six tables:
 - **Turnover** — employees who left, with reason for leaving
 - **Salaries** — historical salary changes per employee
 
-> Note: screenshots and results below are generated from a **sample dataset built to match this schema**, used to demonstrate the queries. Replace with your own screenshots once you run these scripts against the actual NextGen database.
-
----
-
 ## 1️⃣ Employee Retention Analysis
 **Goal:** Understand turnover trends and identify root causes of high turnover.
 
@@ -37,6 +33,8 @@ FROM employees e
 JOIN departments d ON e.department_id = d.department_id
 ORDER BY e.hire_date ASC
 LIMIT 5;
+
+<img width="1483" height="509" alt="image" src="https://github.com/user-attachments/assets/f636012d-8a57-4359-9a3f-95766b0c5097" />
 
 -- Turnover rate for each department
 SELECT
