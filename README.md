@@ -176,14 +176,6 @@ ORDER BY performance_salary_correlation DESC;
 - [Finding 2 — e.g. whether high performers are consistently paid more]
 - [Finding 3 — e.g. any departments where pay doesn't track performance]
 
----
-
-## 🚀 How to Use
-1. Download the NextGen database file and restore it into PostgreSQL:
-   ```
-   createdb NextGen
-   pg_restore -d NextGen path/to/database_file
-   ```
 2. Run the queries in the `sql/` folder against the `NextGen` database:
    - `sql/employee_retention_analysis.sql`
    - `sql/performance_analysis.sql`
